@@ -1,0 +1,20 @@
+[
+    {
+        "Problem": "the banker ' s gain of a certain sum due 3 years hence at 10 % per annum is rs . 36 . what is the present worth ?",
+        "Rationale": "\"explanation : t = 3 years r = 10 % td = ( bg \u00d7 100 ) / tr = ( 36 \u00d7 100 ) / ( 3 \u00d7 10 ) = 12 \u00d7 10 = rs . 120 td = ( pw \u00d7 tr ) / 100 \u21d2 120 = ( pw \u00d7 3 \u00d7 10 ) / 100 \u21d2 1200 = pw \u00d7 3 pw = 1200 / 3 = rs . 400 answer : option a\"",
+        "options": "a ) rs . 400 , b ) rs . 300 , c ) rs . 500 , d ) rs . 350 , e ) none of these",
+        "correct": "a",
+        "annotated_formula": "divide(multiply(const_100, divide(multiply(36, const_100), multiply(3, 10))), multiply(3, 10))",
+        "linear_formula": "multiply(n2,const_100)|multiply(n0,n1)|divide(#0,#1)|multiply(#2,const_100)|divide(#3,#1)|",
+        "category": "gain"
+    },
+    {
+        "Problem": "average age of students of an adult school is 40 years . 120 new students whose average age is 32 years joined the school . as a result the average age is decreased by 4 years . find the number of students of the school after joining of the new students .",
+        "Rationale": "\"explanation : let the original no . of students be x . according to situation , 40 x + 120 * 32 = ( x + 120 ) 36 \u21d2 x = 120 so , required no . of students after joining the new students = x + 120 = 240 . answer : d\"",
+        "options": "a ) 1200 , b ) 120 , c ) 360 , d ) 240 , e ) none of these",
+        "correct": "d",
+        "annotated_formula": "multiply(divide(subtract(multiply(add(32, 4), 120), multiply(120, 32)), subtract(40, add(32, 4))), 4)",
+        "linear_formula": "add(n2,n3)|multiply(n1,n2)|multiply(n1,#0)|subtract(n0,#0)|subtract(#2,#1)|divide(#4,#3)|multiply(n3,#5)|",
+        "category": "general"
+    }
+]
